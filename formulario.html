@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Contenedor alineado a la izquierda con fondo negro profundo */
+        .form-container {
+            max-width: 450px;
+            margin: 20px 0; 
+            background-color: #000000; /* Negro puro */
+            padding: 30px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            border: 1px solid #333333; /* Borde gris sutil */
+        }
+
+        /* Titulo con linea blanca fina y texto espaciado */
+        .titulo-seccion {
+            border-left: 3px solid #ffffff; /* Blanco puro en lugar de azul */
+            padding-left: 15px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .grupo-input {
+            margin-bottom: 20px;
+        }
+
+        /* Etiquetas minimalistas en mayúsculas */
+        label {
+            display: block; 
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 11px;
+            margin-bottom: 8px;
+            color: #999999; /* Gris suave */
+        }
+
+        /* Cuadros de entrada estilo "Dark Mode" */
+        input[type="text"], 
+        input[type="email"], 
+        textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #111111; /* Gris casi negro */
+            border: 1px solid #333333;
+            color: #ffffff;
+            border-radius: 0px; /* Bordes rectos para un look mas tecnico */
+            box-sizing: border-box;
+            font-size: 13px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #ffffff; /* Brilla en blanco al escribir */
+        }
+
+        /* Boton Blanco con texto Negro (Alto contraste) */
+        .btn-enviar {
+            background-color: #ffffff; /* Blanco como los elementos destacados */
+            color: #000000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 0px; /* Recto para seguir el estilo minimalista */
+            cursor: pointer;
+            width: 100%;
+            transition: 0.4s ease;
+        }
+
+        .btn-enviar:hover {
+            background-color: #cccccc; /* Gris claro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="titulo-seccion">Registro de Participante</h2>
+        <p style="color: #666666; font-size: 12px; text-transform: uppercase; margin-bottom: 20px;">
+            Ingresa tus datos personales:
+        </p>
+
+        <form>
+            <div class="grupo-input">
+                <label>Nombre</label>
+                <input type="text" placeholder="TU NOMBRE">
+            </div>
+
+            <div class="grupo-input">
+                <label>Apellido</label>
+                <input type="text" placeholder="TU APELLIDO">
+            </div>
+
+            <div class="grupo-input">
+                <label>Correo electr&oacute;nico</label>
+                <input type="email" placeholder="EMAIL@EJEMPLO.COM">
+            </div>
+
+            <div class="grupo-input">
+                <label>Ocupacion</label>
+                <input type="text" placeholder="ESTUDIANTE">
+            </div>
+
+            <div class="grupo-input">
+                <label>Comentarios</label>
+                <textarea rows="4" placeholder="DEJANOS UN COMENTARIO..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">
+                Enviar Solicitud
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
